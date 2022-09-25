@@ -1,0 +1,76 @@
+/*
+----TYPOGRAPHY SYSTEM
+
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+----Colors
+-Primary: #339af0
+-Tints:
+#2e8bd8
+#297bc0
+#339af0
+#47a4f2
+#99cdf8
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9.6rem;
+}
+.subheading {
+  display: block;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #5f5f5f;
+}
+
+.primary-heading {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+.section-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+.container-center {
+  align-items: center;
+}
+.top-margin {
+  margin-top: 50%;
+  transform: translate(0, -50%);
+}
